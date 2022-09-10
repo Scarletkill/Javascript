@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <head>
+        <title>NEW File</title>
+        <link href ="style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class ="box"></div>
+        <button id ="moveleft">Left</button>
+        <button id ="moveRight">Right</button>
+        <button id ="moveup">Up</button>
+        <button id ="movedown">Down</button>
+   </body>
+   <script>
+    let buttonleft = document.getElementById("moveleft")
+    let buttonright = document.getElementById("moveRight")
+    let obj = document.querySelector(".box")
+    buttonRight.addEventListener("click",function()
+    {
+        let prevleft = parseInt(obj.style.left)
+        {
+            if(!prevleft) 
+            {
+                pervleft=100;
+            }
+        }
+        obj.style.left=(prevleft+50)+"px";
+    })
+    buttonleft.addEventListener("click",function()
+    {
+        let prevRight = parseInt(obj.style.Right)
+        {
+            if(!prevRight) 
+            {
+                pervRight=100;
+            }
+        }
+        obj.style.left=(prevRight-50)+"px";
+    })
+    </script>
+</html>
