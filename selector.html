@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+</head>
+<body>
+    <div id = "obj1"></div>
+    <div id = "obj2"></div>
+</body>
+<script>
+    let obj1= document.getElementById("obj1");
+    obj1.style.height = "50px"
+    obj1.style.width = "50px"
+    obj1.style.background = "red"
+    let obj2=document.getElementById("obj2");
+    obj2.style.height="50px"
+    obj2.style.width="50px"
+    obj2.style.background = "black"
+    obj1.addEventListener("click",function(){
+       let currentBackground =obj1.style.background;
+       console.log(currentBackground)
+       if(currentBackground=="red")
+       {
+        obj1.style.background="black";
+       }
+       if(currentBackground=="black"){
+        obj1.style.background="red";
+       }
+    })
+     obj2.addEventListener("click",function(){
+        obj2.style.background="red"
+     })
+</script>
+</html>
